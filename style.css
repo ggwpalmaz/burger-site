@@ -45,8 +45,17 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  border-radius: 6%;
+  transition: all 1s ease-in-out;
 }
 
+.button:hover {
+  background-color: greenyellow;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
 .main {
   margin: 418px 755px 250px 340px;
   color: rgb(234, 238, 241);
@@ -113,4 +122,223 @@ body {
 .burger-img {
   width: 550px;
   height: 500px;
+}
+
+/* Четвертая страница */
+
+.fourth-menu {
+  color: #f6f3f3;
+  display: grid;
+  grid-template-columns: 555px 555px;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding-top: 7rem;
+  gap: 30px;
+  padding-left: 13rem;
+}
+
+.products {
+  width: 555px;
+  height: 300px;
+}
+
+.product-one {
+  background-image: url(/burger/burger/img/product-1.jpg);
+}
+
+.product-two {
+  background-image: url(/burger/burger/img/product-2.jpg);
+}
+
+.product-three {
+  background-image: url(/burger/burger/img/product-3.jpg);
+}
+.product-four {
+  background-image: url(/burger/burger/img/product-4.jpg);
+}
+
+.product-in-one {
+  width: 264px;
+  height: 175px;
+  margin: 63px 1px 62px 290px;
+  line-height: 2rem;
+}
+
+.product-in-two {
+  width: 264px;
+  height: 175px;
+  margin: 63px 253px 63px 51px;
+  line-height: 2.8rem;
+}
+
+.product-in-three {
+  width: 264px;
+  height: 175px;
+  margin: 63px 1px 62px 290px;
+  line-height: 2rem;
+}
+
+.product-in-four {
+  width: 264px;
+  height: 175px;
+  margin: 63px 253px 63px 51px;
+  line-height: 2rem;
+}
+
+.fourth-main {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+  margin: 15rem auto;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.fourth-main-page {
+  width: 368px;
+  height: 125px;
+  text-align: center;
+}
+
+.five-page {
+  background-color: #312f30;
+  color: white;
+}
+
+.download-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 170px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  line-height: 2rem;
+  margin: 86px 0 140px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+ul {
+  list-style: none;
+}
+
+.upper {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.img-foot {
+  display: flex;
+  gap: 10px;
+}
+
+/* Медиа Запросы */
+
+/* Для экранов с шириной не более 768 пикселей */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 14rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot-one {
+    display: none;
+  }
+
+  .foot-two {
+    padding-right: 1rem;
+  }
+
+  .last-one {
+    padding-left: 3rem;
+  }
+
+  .img-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* стили для смартфонов и планшетов */
+}
+
+/* Для экранов с шириной не более 992 пикселей */
+@media (max-width: 992px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 14rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  /* стили для компьютеров с небольшим экраном */
+}
+
+/* Для экранов с шириной не более 1200 пикселей */
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 14rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* стили для компьютеров с большим экраном */
+}
+
+@media (max-width: 1400px) {
+  .fourth-menu {
+    color: #f6f3f3;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding-top: 7rem;
+    gap: 30px;
+    padding-left: 13rem;
+    overflow: hidden;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 14rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .fourth-menu {
+    justify-content: center;
+  }
 }
