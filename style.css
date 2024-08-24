@@ -65,7 +65,7 @@ body {
 
 .first-page {
   margin: 0;
-  background-image: url(/МОИ/burger/img/welcome-bg.jpg);
+  background-image: url(/burger/img/welcome-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 400px;
@@ -143,18 +143,18 @@ body {
 }
 
 .product-one {
-  background-image: url(/burger/burger/img/product-1.jpg);
+  background-image: url(/burger/img/product-1.jpg);
 }
 
 .product-two {
-  background-image: url(/burger/burger/img/product-2.jpg);
+  background-image: url(/burger/img/product-2.jpg);
 }
 
 .product-three {
-  background-image: url(/burger/burger/img/product-3.jpg);
+  background-image: url(/burger/img/product-3.jpg);
 }
 .product-four {
-  background-image: url(/burger/burger/img/product-4.jpg);
+  background-image: url(/burger/img/product-4.jpg);
 }
 
 .product-in-one {
@@ -245,19 +245,58 @@ ul {
   gap: 10px;
 }
 
+#checkk {
+  display: none;
+}
+.checkk1 {
+  display: block;
+  width: 30px;
+  background-color: #fff;
+  height: 3px;
+  margin-bottom: 6px;
+}
+
+label {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  display: none;
+}
+
 /* Медиа Запросы */
 
 /* Для экранов с шириной не более 768 пикселей */
 @media (max-width: 768px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: #150101;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+  }
+  label {
+    display: block;
+    z-index: 1;
+  }
+  #checkk:checked ~ .nav-ul {
+    display: block;
+  }
+  #checkk:checked ~ label span:nth-child(1) {
+    transform: rotate(45deg) translateX(5px);
+  }
+  #checkk:checked ~ label span:nth-child(2) {
+    display: none;
+  }
+  #checkk:checked ~ label span:nth-child(3) {
+    transform: rotate(-45deg) translateX(5px);
+  }
   .nav {
     display: flex;
     flex-direction: column;
     height: auto;
     gap: 25px;
-  }
-  .nav-ul {
-    display: flex;
-    flex-direction: column;
   }
 
   .main {
